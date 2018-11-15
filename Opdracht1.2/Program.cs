@@ -30,7 +30,15 @@ namespace Opdracht1._2
             q1.Addvraag(v1);
             q1.ToonVraag();
 
-
+            string input = Console.ReadLine();
+            if (q1.CheckAntwoord(input, v1.Antwoord))
+            {
+                Console.WriteLine("Goed");
+            }
+            else
+            {
+                Console.WriteLine("fout"); 
+            }
 
             Console.ReadLine();
 

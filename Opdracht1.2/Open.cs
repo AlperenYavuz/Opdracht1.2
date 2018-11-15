@@ -21,7 +21,7 @@ namespace Opdracht1._2
 
         public override string ToString()
         {
-            return Vraag;
+            return Vraag + " + " + Categorie;
         }
     }
 }
