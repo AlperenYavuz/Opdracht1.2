@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IVraag.cs" />
+    <Compile Include="Meerkeuze.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

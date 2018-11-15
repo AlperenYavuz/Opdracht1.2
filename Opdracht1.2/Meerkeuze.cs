@@ -11,10 +11,14 @@ namespace Opdracht1._2
 
         private Dictionary<string, Boolean> Antwoorden = new Dictionary<string, Boolean>();
 
-        public Meerkeuze(string vraag, Dictionary<string, Boolean> antwoorden, string categorie, int graad)
+        /*public Meerkeuze(string vraag, string categorie, int graad)
         {
-            Antwoorden = antwoorden;
-        }
+            Vraag = vraag;
+            Categorie = categorie;
+            Graad = graad;
+        }*/
+
+        public Meerkeuze() { }
 
         public string Vraag { set; get; }
 
