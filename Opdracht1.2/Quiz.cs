@@ -10,12 +10,11 @@ namespace Opdracht1._2
     {
         public List<IVraag> quiz = new List<IVraag>();
 
-        public void ToonVraag()
+        public void ToonVraag(IVraag v)
         {
-            foreach(IVraag v in quiz)
-            {
+           
                 Console.WriteLine(v);
-            }
+            
 
         }
 
@@ -26,16 +25,18 @@ namespace Opdracht1._2
 
         public bool CheckAntwoord(string input, string antwoord)
         {
-            
-            input = Console.ReadLine();
+           
             if (input.Equals(antwoord))
             {
                 return true;
             }
 
             return false;
-                
+        }
 
+        public List<IVraag> GetVragen()
+        {
+            return quiz;
         }
     }
 }
