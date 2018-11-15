@@ -8,8 +8,13 @@ namespace Opdracht1._2
 {
     public class Meerkeuze : IVraag
     {
-        private string vraag;
-        private string categorie;
+
+        private Dictionary<string, Boolean> Antwoorden = new Dictionary<string, Boolean>();
+
+        public Meerkeuze(string vraag, Dictionary<string, Boolean> antwoorden, string categorie, int graad)
+        {
+            Antwoorden = antwoorden;
+        }
 
         public string Vraag { set; get; }
 
@@ -19,9 +24,14 @@ namespace Opdracht1._2
 
         public string Antwoord { set; get; }
 
+        public void AddChoice(string antwoord, Boolean goed)
+        {
+            Antwoorden.Add(antwoord, goed);
+        } 
+
         public override string ToString()
         {
-            return vraag;
+            return Vraag;
         }
     }
 }
