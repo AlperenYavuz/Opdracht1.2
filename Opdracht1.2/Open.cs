@@ -9,7 +9,7 @@ namespace Opdracht1._2
     class Open : IVraag
     {
 
-        public Open() { }
+        public Open() {}
 
         public string Vraag { set; get; }
 

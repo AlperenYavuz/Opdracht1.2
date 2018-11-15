@@ -11,21 +11,26 @@ namespace Opdracht1._2
         static void Main(string[] args)
         {
 
-            Meerkeuze m1 = new Meerkeuze()
+            Open v1 = new Open()
             {
                 Vraag = "Hoeveel fruit eet myriam per dag?",
+                Graad = 1,
                 Categorie = "School",
-                Graad = 1
+                Antwoord = "veel",
             };
 
+            /*
             m1.AddChoice("5", true);
             m1.AddChoice("6", false);
             m1.AddChoice("7", false);
             m1.AddChoice("8", false);
+            */
 
             Quiz q1 = new Quiz();
-            q1.Addvraag(m1);
-            Console.WriteLine(q1);
+            q1.Addvraag(v1);
+            q1.ToonVraag();
+
+
 
             Console.ReadLine();
 
